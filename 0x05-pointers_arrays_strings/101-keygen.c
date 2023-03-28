@@ -1,55 +1,24 @@
-#include <math.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
-/**
-  *randomPasswordGeneration - Function that randomly generates
-  *passwords of length n.
-  *@N: password length
-  *
-  *Return: Nothing.
- */
-
-void randomPasswordGeneration()
-{
-	int i = 0;
-	int randomizer = 0;
-	char numbers[] = "0123456789";
-	char letter[] = "abcdefghijklmnopqrstuvwxyz";
-	char LETTER[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char symbols[] = "!@#$^&*?";
-	char password[5];
-
-	randomizer  = rand() % 4;
-	srand((unsigned int)(time(NULL)));
-
-
-	for (i = 0; i < 5; i++)
-	{
-		if (randomizer == 1)
-		{
-			password[i] = symbols[rand() % 8];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 2)
-		{
-			password[i] = numbers[rand() % 8];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 3)
-		{
-			password[i] = LETTER[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else
-		{
-			password[i] = letter[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-	}
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <time.h> 
+ 
+/** 
+  * main - generates random passwords for 101-crackme 
+  * Return: zero 
+*/ 
+ 
+int main(void) 
+{ 
+ int sum; 
+ char c; 
+ 
+ srand(time(NULL)); 
+ while (sum <= 2645) 
+ { 
+  c = rand() % 128; 
+  sum += c; 
+  putchar(c); 
+ } 
+ putchar(2772 - sum); 
+ return (0); 
 }
