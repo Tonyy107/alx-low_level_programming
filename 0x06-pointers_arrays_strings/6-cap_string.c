@@ -1,36 +1,30 @@
 #include "main.h"
-
 /**
- * cap_string - function that capitalizes all words of a string.
- * @s: Pointer to Char
- * Return: char.
+ * cap_string - capitalizes all words of a string
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
 char *cap_string(char *s)
 {
-	int i = 0;
+	int count = 0, i;
+	int sep_words[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-	while (*(s + i) != '\0')
+	if (*(s + count) >= 97 && *(s + count) <= 122)
+		*(s + count) = *(s + count) - 32;
+	count++;
+	while (*(s + count) != '\0')
 	{
-		if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
+		for (i = 0; i < 13; i++)
 		{
-			*(s + i) = *(s + i) - ' ';
-			i++;
-		}
-		if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-		    || *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
-		    || *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
-		    || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
-		    || *(s + i) == '.')
-		{
-			i++;
-			if (*(s + i) >= 97 && *(s + i) <= 122)
+			if (*(s + count) == sep_words[i])
 			{
-				*(s + i) = *(s + i) - ' ';
+				if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+					*(s + (count + 1)) = *(s + (count + 1)) - 32;
+				break;
 			}
 		}
-		else
-			i++;
+		count++;
 	}
 	return (s);
 }
