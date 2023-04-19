@@ -39,4 +39,4 @@ oper.op = argv[2];
 oper.f = get_op_func(argv[2]);
 printf("%d\n", oper.f(a1, b2));
 return (0);
-}}
+}
