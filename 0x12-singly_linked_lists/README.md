@@ -1,1 +1,1 @@
-looooool
+linked lists
