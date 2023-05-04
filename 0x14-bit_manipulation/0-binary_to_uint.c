@@ -7,17 +7,21 @@
  *Return: the unsigned int form of b
  */
 
-unsigned int binary_to_uint(const char *b);
+unsigned int binary_to_uint(const char *b)
 {
-unsigned int num = 0
-if (!b)
-	return(0);
-	while (*b)
-{
-if (*b != "0" && *b != "1")
-	return (0);
-num = num * 2 + (*b++ - "0");
+	int len, i;
+	uint sum = 0;
 
-}
-return (num);
+	if (!b)
+		return (sum);
+
+	len = slen(b);
+	if (!valid(b))
+		return (0);
+
+	for (i = 0, len--; b[i]; i++, len--)
+		if (b[i] == '1')
+			sum += 1 * (1 << len);
+
+	return (sum);
 }
