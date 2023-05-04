@@ -2,6 +2,7 @@
 
 /**
  *binary_to_uint - converts a binary number to an unsigned int
+ *@b: the binary number as a string
  *Return: Always 0
  */
 
