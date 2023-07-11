@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
+
 /**
- * main - main function
- * return :  0
+ * main - print somethings 0
+ * return : always  0
  */
 int main(void)
 {
