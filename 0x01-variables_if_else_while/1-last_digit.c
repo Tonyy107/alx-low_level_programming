@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /*
- * main -  entry
+ * main :  entry
  * description : print the last digit of the number stored in the variable n
  * Return : Always  0
  */
