@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - my lol point
+ * main - entry point
  * Return: 0
  */
 int main(void)
@@ -13,6 +13,10 @@ int main(void)
 		if (a != 101 || a != 113)
 		{
 			putchar(a);
+		}
+		else 
+		{
+			return (0);
 		}
 	}
 	putchar('\n');
