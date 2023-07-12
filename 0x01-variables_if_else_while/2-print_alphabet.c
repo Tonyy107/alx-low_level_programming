@@ -4,7 +4,7 @@
  *
  *description -  lol
  *
- * return:  0
+ * return: always  0
  */
 
 
