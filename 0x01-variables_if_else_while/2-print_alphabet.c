@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- *description: lol
+ *description -  lol
  *
  * return:  0
  */
