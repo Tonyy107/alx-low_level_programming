@@ -2,9 +2,9 @@
 /**
  * main - entry point
  *
- *description -  lol
+ *description - program that prints the alphabet in lowercase
  *
- * return: Always  0
+ * return: always  0
  */
 
 
