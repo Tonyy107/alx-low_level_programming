@@ -4,7 +4,7 @@
  *
  *description - program that prints the alphabet in lowercase
  *
- * return: always  0
+ * Return: always  0
  */
 
 
