@@ -6,8 +6,9 @@
  */
 int main(void)
 {
-	int a , b;
-	for(b = 0 ; b <= 8 ; b++)
+	int a, b;
+
+	for (b = 0 ; b <= 8 ; b++)
 	{
 	for (a = 48 ; a <= 57 ; a++)
 	{
