@@ -20,7 +20,7 @@ int main(void)
 					putchar(32);
 					putchar(z);
 					putchar(t);
-					if (x != 55)
+					if (x != 56)
 					{
 						putchar(44);
 						putchar(32);
