@@ -13,8 +13,11 @@ int main(void)
 		{
 			putchar(x);
 			putchar(y);
-			putchar(44);
-			putchar(32);
+			if(x != 56 && y != 57)
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
 	}
 	putchar('\n');
