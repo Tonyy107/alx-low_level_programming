@@ -5,21 +5,25 @@
  */
 int main(void)
 {
-	int x, y, z;
+	int x, y, z, t;
 
 	for (x = 48 ; x <= 57 ; x++)
 	{
 		for (y = 48 ; y <= 57 ; y++)
 		{
-			for (z = 49 + (y - 48) ; z <= 57 ; z++)
+			for (z = x ; z <= 57 ; z++)
 			{
-				putchar(x);
-				putchar(y);
-				putchar(z);
-				if (x != 55)
+				for (t = y + 1 ; t <= 57 ; t++)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(x);
+					putchar(y);
+					putchar(z);
+					putchar(t);
+					if (x != 55)
+					{
+						putchar(44);
+						putchar(32);
+					}
 				}
 			}
 		}
