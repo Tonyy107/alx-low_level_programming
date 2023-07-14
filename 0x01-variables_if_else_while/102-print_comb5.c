@@ -20,7 +20,7 @@ int main(void)
 					putchar(32);
 					putchar(z);
 					putchar(t);
-					if (x != 57 && y != 56)
+					if (x != 57 || y != 56)
 					{
 						putchar(44);
 						putchar(32);
