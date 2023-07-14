@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (z = x ; z <= 57 ; z++)
 			{
-				for (t = y + 1 ; t <= 57 ; t++)
+				for (t = y  ; t <= 57 ; t++)
 				{
 					putchar(x);
 					putchar(y);
