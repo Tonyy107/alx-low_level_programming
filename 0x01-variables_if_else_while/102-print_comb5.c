@@ -17,6 +17,7 @@ int main(void)
 				{
 					putchar(x);
 					putchar(y);
+					putchar(32);
 					putchar(z);
 					putchar(t);
 					if (x != 55)
