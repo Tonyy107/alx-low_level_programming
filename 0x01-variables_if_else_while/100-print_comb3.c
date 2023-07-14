@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+<<<<<<< HEAD
  * main - entry point
  * Return: 0
  */
@@ -20,3 +21,8 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+=======
+* main - entry point
+* Return: 0
+*/
+>>>>>>> fc8f5df2dc12203cb4e481b2a5783d0ba6e9a602
