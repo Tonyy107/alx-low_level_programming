@@ -9,7 +9,7 @@
  ** Description: doubly linked list node structure
  ** 
  **/
-
+size_t print_dlistint(const dlistint_t *h);
 {
 	int n;
 	struct dlistint_s *prev;
