@@ -1,4 +1,4 @@
-#include <main.h>
+#include <lists.h>
 
 /**
  ** struct dlistint_s - doubly linked list
