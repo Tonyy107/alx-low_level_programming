@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -fPIC -c *.c
-gcc -shared *.o -o liball.co
+gcc *.c -c -fPIC
+gcc *.o -shared -o liball.so
