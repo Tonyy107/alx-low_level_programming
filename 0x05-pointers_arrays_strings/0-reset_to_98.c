@@ -3,7 +3,7 @@
 
 /**
  * reset_to_98 - reset input number to 98
- * &n: the numer that we will reset to 98
+ * @n: the numer that we will reset to 98
  * return: void
  */
 
