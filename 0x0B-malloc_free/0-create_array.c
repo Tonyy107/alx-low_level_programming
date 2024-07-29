@@ -2,9 +2,21 @@
 
 char *create_array(unsigned int size, char c)
 {
+    char *arr = malloc(size * sizeof(char));
+    int i = 0;
     if (size == 0)
     {
         return NULL;
     }
-    else if (){}
+    else if (arr == NULL)
+    {
+        return NULL;
+    }
+    else
+    {
+        for(int i = 0; i < size; i++)
+        {
+            arr[i] = c;
+        }
+    }
 }
