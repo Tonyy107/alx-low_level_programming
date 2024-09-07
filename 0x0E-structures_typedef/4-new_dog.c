@@ -18,6 +18,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 	{
 		printf("Memory allocation for dog structure failed\n");
+		free(dog);
 		return (NULL);
 	}
 
