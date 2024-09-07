@@ -14,7 +14,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog = (dog_t *)malloc(sizeof(dog_t));
-	unsigned int nl, ol;
+	unsigned int nl, ol, i;
 
 	for (nl = 0; name[nl]; nl++)
 		;
@@ -28,7 +28,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	dog->name = strdup(name);
+	for (i = 0;i<nl;i++)
+	{
+		dog->name[i] = name[i];
+	}
 
 	for (ol = 0; owner[ol]; ol++)
 		;
@@ -40,7 +43,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = strdup(owner);
+	for (i = 0;i<ol;i++)
+	{
+		dog->owner[i] = owner[i];
+	}
 
 	dog->age = age;
 	return (dog);
