@@ -14,7 +14,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new->str == NULL)
 	{
 		free(new);
-		return (head)
+		return (1)
 	}
 	new->len = strlen(str);
 	new->next = NULL;
