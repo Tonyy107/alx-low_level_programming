@@ -12,12 +12,13 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (new == NULL)
 	{
+		printf("malloc failed");
 		return (NULL);
 	}
 	new->str = strdup(str);
 	new->len = strlen(str);
 	new->next = NULL;
-	if (*head == NULL)
+	if (temp == NULL)
 	{
 		*head = new;
 		return (new);
