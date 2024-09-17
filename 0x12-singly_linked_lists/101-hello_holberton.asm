@@ -1,5 +1,5 @@
 section .data
-    fmt db "Hello, Holberton", 0   ; Null-terminated string
+    fmt db "Hello, Holberton\n", 0   ; Null-terminated string
 
 section .text
     global main                     ; Declare main as the entry point
